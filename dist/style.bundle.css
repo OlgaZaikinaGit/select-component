@@ -1,0 +1,83 @@
+
+.select-el {
+    position: relative;
+}
+.select-el__input {
+	display: block;
+	width: 100%;
+	padding: 11px 20px;
+	border: 1px solid #cfcfcf;
+	border-radius: 3px;
+	background: #fff;
+	font-size: 16px;
+}
+.select-el__input[disabled=disabled] {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+.select-el__input:focus {
+    border-color: #4c88c9;
+	outline: 1px solid #4c88c9;
+}
+.select-el__list {
+	margin-top: 1px;
+	border: 1px solid #efefef;
+	border-radius: 3px;
+	background: #fff;
+	overflow-y: auto;
+	max-height: 250px;
+}
+.select-list__item {
+	padding: 11px 20px;
+	border-bottom: 1px solid #f0f0f0;
+	cursor: pointer;
+}
+.select-list__item:hover, .select-list__item.active {
+	background: #f0f0f0;
+}
+.select-list__item:last-child {
+	border: none;
+}
+.select-list {
+    display: block;
+    position: absolute;
+	z-index: 1;
+	top: 100%;
+	left: 0;
+	width: 100%;
+}
+.error {
+	border-color: red;
+	outline: 1px solid red;
+}
+.not-find {
+    padding: 11px 20px;
+	font-size: 14px;
+	color: #b8aeae;
+}
+.select-el-wrap {
+    position: relative;
+	z-index: 1;
+	margin-bottom: 20px;
+}
+.mr-bt-20 {
+    margin-bottom: 20px;
+}
+.select-list-empty {
+    z-index: 0;
+}
+.select-tag {
+    display: block;
+	width: 100%;
+	padding: 11px 20px;
+	cursor: pointer;
+	font-size: 16px;
+	outline: none;
+}
+.select-tag option {
+	padding: 11px 20px;
+}
+.select-tag:focus + .select-list {
+	box-shadow: 0 0 10px #4c88c959;
+}
+

@@ -1,0 +1,16 @@
+body {
+	padding: 0;
+	margin: 0;
+	font: 16px  'Roboto', sans-serif;
+	background: #f6f6f6;
+}
+body * {
+	box-sizing: border-box;
+}
+.container {
+	margin: 100px auto;
+	width: 100%;
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
